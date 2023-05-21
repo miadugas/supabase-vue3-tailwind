@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#app {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .titleText{
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    font-weight: bold;
+
+  }
+  
+  html[data-theme='dark'] {
+    --tw-text-opacity: 1;
+    color: rgba(243, 244, 246, var(--tw-text-opacity));
+    --tw-bg-opacity: 1;
+    background-color: rgba(31, 41, 55, var(--tw-bg-opacity));
+  }
+  
+  html[data-theme='light'] {
+    --tw-text-opacity: 1;
+    color: rgba(31, 41, 55, var(--tw-text-opacity));
+    --tw-bg-opacity: 1;
+    background-color: rgba(243, 244, 246, var(--tw-bg-opacity));
+  }
+  
+  html.color-transition {
+    transition-property: background-color, color;
+    transition-duration: 1000ms;
+  }
+  
